@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+body {
+    font-family: 'Roboto', sans-serif;
+}
+.fluid-container{
+    display: flex;
+}
+.fluid-container .left,.fluid-container .right{
+    width: 50vw;
+    height: 95vh;
+    margin-right: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+@media screen and (max-width: 576px) {
+    .fluid-container{
+        flex-direction: column;
+    }
+    .fluid-container .left,.fluid-container .right{
+        width: 100vw;
+        margin-right: 0px;
+        height: auto;
+    }
+  }
+.fluid-container .left{
+    background: url('../images/login.png') no-repeat center center/cover;
+}
+.icon{
+    color: white;
+    font-size: 20rem;
+}
+.fluid-container .right .icon{
+    color: #1DA1F2;
+    font-size: 3rem;
+}
+h1{
+    font-size: 3rem;
+    margin-bottom: 2rem;
+}
+h3{
+    margin-bottom: 1.5rem;
+}
+.fluid-container .right .login{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+.btn{
+    width: 100%;
+    border-radius: 2rem;
+    margin-bottom: 20px;
+    padding: 10px;
+}
+.btn-primary{
+    background-color: #1DA1F2;
+}
+.btn-light{
+    border: 1px solid #1DA1F2;
+}
+.btn-light:hover{
+    border: 1px solid #1DA1F2;
+    background-color: #dfe9f8;
+}
+footer{
+    width: 100vw;
+    height: 5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+footer span{
+    display: flex;
+    flex-wrap: wrap;
+}
+footer span a{
+    padding: 5px;
+    display: inline-block;
+    text-decoration: none;
+    color: rgb(129, 124, 124);
+    text-align: center;
+    font-size: .8em;
+}

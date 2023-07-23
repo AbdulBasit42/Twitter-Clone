@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home / Twitter</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/3fcd57f42d.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/profile.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-3 respleft">
+                <div class="left-bar">
+
+                    <ul class="nav d-inline-block align-center" id="navlist">
+                        <li class="nav-item ps-2 pe-2 logo">
+                            <i class="fab fa-twitter link-dark left-active p-3 fa-lg" style="color : #1DA1F2"></i>
+                        </li>
+                        <li class="nav-item ps-2 content">
+                            <a href="homepage.html" class="link-dark left-active p-3">
+                                <i class="fas fa-home fa-lg	fa-dark white-icon"></i><span
+                                    class="left-bar-text ms-4 me-5 bolded">Home</span>
+                            </a>
+                        </li>
+                        <li class="nav-item ps-2 content">
+                            <a href="Trending.html" class="link-dark left-active p-3">
+                                <i class="fas fa-hashtag fa-lg white-icon	"></i><span
+                                    class="left-bar-text ms-4 me-5 bolded">Explore</span>
+                            </a>
+                        </li>
+                        <li class="nav-item ps-2 content">
+                            <a href="#" class="link-dark left-active p-3 ">
+                                <i class="far fa-bell fa-lg	white-icon"></i><span
+                                    class="left-bar-text ms-4 me-5 bolded">Notifications</span>
+                            </a>
+                        </li>
+                        <li class="nav-item ps-2 content">
+                            <a href="#" class="link-dark left-active p-3">
+                                <i class="far fa-envelope fa-lg	white-icon"></i><span
+                                    class="left-bar-text ms-4 me-5 bolded">Messages</span>
+                            </a>
+                        </li>
+                        <li class="nav-item ps-2 content">
+                            <a href="#" class="link-dark left-active p-3">
+                                <i class="far fa-bookmark fa-lg	white-icon"></i><span
+                                    class="left-bar-text ms-4 me-5 bolded">Bookmarks</span>
+                            </a>
+                        </li>
+                        <li class="nav-item ps-2 content align-content-center">
+                            <a href="#" class="link-dark left-active p-3 ">
+                                <i class="far fa-list-alt fa-lg	white-icon"></i><span
+                                    class="left-bar-text ms-4 me-5 bolded">Lists</span>
+                            </a>
+                        </li>
+                        <li class="nav-item ps-2 content">
+                            <a href="Profile.html" class="link-dark left-active  p-3 ">
+                                <i class="far fa-user fa-lg	white-icon"></i><span
+                                    class="left-bar-text ms-4 me-5 bolded">Profile</span>
+                            </a>
+                        </li>
+                        <li class="nav-item ps-2 content">
+                            <a href="#" class="link-dark left-active p-3 ">
+                                <i class="far fa-circle fa-lg white-icon"></i><span
+                                    class="left-bar-text ms-4 me-5 bolded">More</span>
+                            </a>
+                        </li>
+
+                        <li class="nav-item ps-2 ">
+                            <a href="#tweet">
+                                <button class="btn btn-primary tweet-btn mt-1"><span
+                                        class="left-bar-text tweet-btn-text">Tweet</span></button>
+                            </a>
+                        </li>
+                        <li class="nav-item ps-2 left-profile-show">
+                            <div class="fluid-container">
+                                <div class="img">
+                                    <img class="profile " src="images/profile.png" alt="" srcset="">
+                                </div>
+                                <div class="text">
+                                    <span class="profile-name">Abdul Basit</span><br>
+                                    <span class="profile-name">@abdulbasit</span>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-5 respmiddle">
+                <div id="toggle">
+                    <div>
+                    </div>
+                </div>
+                <h4 class="mid-home">Abdul Basit <i class="far fa-star float-end mid-star"></i></h4>
+                
+                <span class="mid-home-id" id="small-tweet">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 2 Tweets</span>
+                <!-- <hr> -->
+                <div class="mid-tweet">
+                    <div class="row">
+                        <!-- <div class="col"> -->
+                        <!-- <img class="profile-background" src="images/profileBack.jpg" alt=""> -->
+                        <div class="image-container">
+                            <!-- Larger Picture -->
+                            <img src="images/WIN_20230512_12_06_38_Pro.jpg" alt="Larger Picture" class="larger-image">
+
+                            <!-- Circular Image -->
+                            <img src="images/0ca4f707-526f-45cf-a524-0f9ab8277473.jpg" alt="Circular Image"
+                                class="circular-image">
+                                <button class="btn btn-light mid-tweet-button " id="edit-btn">Edit Profile</button>
+                        </div>
+                        <!-- Edit Profile Button -->
+                        
+
+                        <!-- </div> -->
+                        <!-- <div class="col-10">
+                            <input class="form-control mid-tweet-input" type="text" name="" id="tweet"
+                                onchange="changetext(this)" placeholder="What's Happening">
+                        </div> -->
+                    </div>
+
+                    <!-- <div class="row">
+                        <div class="col-2">
+                        </div> -->
+                    <!-- 
+                        <div class="col-10">
+                            <div class="ms-3 mt-4">
+                                <i class="fas fa-file-image icon"></i>
+                                <i class="fas fa-camera icon ps-3"></i>
+                                <i class="fas fa-chart-bar icon ps-3"></i>
+                                <i class="far fa-smile icon ps-3"></i>
+                                <i class="far fa-calendar-alt icon ps-3"></i>
+                                <button class="btn btn-primary mid-tweet-button" id="tweet-btn">Tweet</button>
+
+                            </div>
+
+                        </div> -->
+                    <!-- </div> -->
+                    <div class="mid-gap-bar mt-2 mb-3 midgapchange"></div>
+                    <!-- <div class="mid-post">
+                        <div class="row">
+                            <div class="col-2">
+                                <img class="mid-tweet-profile" src="images/profile.png" alt="">
+                            </div>
+                            <div class="col-10">
+                                <h4 class="mid-post-profile">Abdul Basit <span class="mid-post-id">@abdulbasit</span>
+                                </h4>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, voluptates sint.
+                                Ipsam a
+                                porro voluptates praesentium unde eveniet, et asperiores. Dolore ipsa doloremque sed
+                                nobis
+                                architecto praesentium itaque porro minima!
+                            </div>
+                        </div>
+                        <div class="text-center pt-2">
+                            <i class="far fa-comment me-5  mid-post-icon"></i>
+                            <i onclick="Retweet(this)" class="fas fa-retweet me-5  mid-post-icon"></i>
+                            <i onclick="LikeButton(this)" class="far fa-heart me-5  mid-post-icon like"></i>
+                            <i class="far fa-share-square  mid-post-icon"></i>
+                        </div>
+                    </div>
+                    <div class="mid-post mt-2">
+                        <div class="row">
+                            <div class="col-2">
+                                <img class="mid-tweet-profile" src="images/profile.png" alt="">
+                            </div>
+                            <div class="col-10">
+                                <h4 class="mid-post-profile">Elon Musk <i
+                                        class="fas fa-certificate mid-star me-2"></i><span
+                                        class="mid-post-id">@elonmusk</span>
+                                </h4>
+                                No it doesn’t hurt at all
+                                </span>
+                                <img class="mid-post-photo mt-3 elon-tweet" src="images/elon.jfif" alt="" srcset="">
+                            </div>
+                        </div>
+
+                        <div class="text-center pt-2">
+                            <i class="far fa-comment me-5  mid-post-icon"></i>
+                            <i onclick="Retweet(this)" class="fas fa-retweet me-5  mid-post-icon"></i>
+                            <i onclick="LikeButton(this)" class="far fa-heart me-5  mid-post-icon like"></i>
+                            <i class="far fa-share-square  mid-post-icon"></i>
+                        </div>
+                    </div>
+
+                    <div class="mid-post mt-2">
+                        <div class="row">
+                            <div class="col-2">
+                                <img class="mid-tweet-profile" src="images/profile.png" alt="">
+                            </div>
+                            <div class="col-10">
+                                <h4 class="mid-post-profile">Brendon Mccullum <span class="mid-post-id">@baz</span>
+                                </h4>
+                                Hey! You ok?? <span class="mid-star">
+                                    <a class="hashtag" href="">#SonicTheHedgehog</a>
+                                    #sonicfanart </a>
+                                    <a class="hashtag" href="">#3dart </a>
+                                    <a class="hashtag" href="">#SonicMovie2</a>
+                                </span>
+                                <img class="mid-post-photo mt-3" src="images/sonik.jfif" alt="" srcset="">
+                            </div>
+                        </div>
+
+                        <div class="text-center pt-2">
+                            <i class="far fa-comment me-5  mid-post-icon"></i>
+                            <i onclick="Retweet(this)" class="fas fa-retweet me-5  mid-post-icon"></i>
+                            <i onclick="LikeButton(this)" class="far fa-heart me-5  mid-post-icon like"></i>
+                            <i class="far fa-share-square  mid-post-icon"></i>
+                        </div>
+                    </div> -->
+
+
+                </div>
+            </div>
+            <div class="col-4 respright ">
+                <ul class="nav align-center ">
+                    <li class="nav-item ps-2 pe-2 d-flex mt-1">
+                        <input class="search-box form-control search-input" type="text" name="" id="searchBox"
+                            placeholder="Search">
+                        <input type="checkbox" id="mode">
+                    </li>
+
+                    <li class="nav pt-3 ">
+                        <div class="col-4 respright ">
+                            <div class="card rp-people rightMost">
+                                <div class="rp-header ">
+                                    <h3 class="rp-header-text">Relevant People</h3>
+                                </div>
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item d-i  rightMost">
+                                        <div class="row rp-card-user">
+                                            <div class="col-3">
+                                                <img class="rp-profile" src="images/profile.png" alt="" srcset="">
+                                            </div>
+                                            <div class="col-4 rp-p-text pt-2">
+                                                <span class="rp-name">Abdul Basit</span>
+                                                <span class="rp-id">
+                                                    @abdulbasit
+                                                </span>
+                                            </div>
+                                            <div class="col-5 follow">
+                                                <button class="btn btn-primary rp-btn mt-1 mt-2 p-2 changeFollow"
+                                                    onclick="toggleButtonText(this)"> <span
+                                                        class=" rp-btn-text button-text">Following</span> </button>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-3">
+
+                                            </div>
+                                            <div class="col-9">
+                                                <p class="rp-bio pe-2 pt-1">Lorem, ipsum dolor sit amet consectetur
+                                                    adipisicing
+                                                    elit
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="list-group-item d-i rightMost">
+                                        <div class="row rp-card-user ">
+                                            <div class="col-3">
+                                                <img class="rp-profile" src="images/profile.png" alt="" srcset="">
+                                            </div>
+                                            <div class="col-4 rp-p-text pt-2 ">
+                                                <span class="rp-name">JD</span>
+                                                <span class="rp-id">
+                                                    @jaggadaku
+                                                </span>
+                                            </div>
+                                            <div class="col-5 follow">
+                                                <button class="btn btn-primary rp-btn mt-1 mt-2 p-2 changeFollow"
+                                                    onclick="toggleButtonText(this)"> <span
+                                                        class=" rp-btn-text button-text">Following</span> </button>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-3">
+
+                                            </div>
+                                            <div class="col-9">
+                                                <p class="rp-bio pe-2 pt-1">Lorem, ipsum dolor sit amet consectetur
+                                                    adipisicing
+                                                    elit
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </li>
+
+                                </ul>
+                            </div>
+                    </li>
+                    <li class="nav pt-3">
+                        <div>
+                            <div class="news-header news wh-top  rightMost">
+                                <h2 class="news-header-text ps-3">What's Happening</h2>
+                            </div>
+                            <ul class="list-group list-group-flush ">
+                                <li class="list-group-item d-i news rightMost">
+                                    <span class="wh wh-top">Trending in Hashes</span>
+                                    <i class="fas fa-ellipsis-h wh-option"></i>
+                                    <br>
+                                    <span class="wh wh-hashtag bolded">#MBBSvsBTECH</span>
+                                    <br>
+                                    <span class="wh wh-tweet">2000+ Tweets</span>
+                                </li>
+                                <li class="list-group-item d-i news rightMost">
+                                    <span class="wh wh-top">Trending in India</span>
+                                    <i class="fas fa-ellipsis-h wh-option"></i>
+                                    <br>
+                                    <span class="wh wh-hashtag bolded">#ConductJEEExam</span>
+                                    <br>
+                                    <span class="wh wh-tweet">1M+ Tweets</span>
+                                </li>
+                                <li class="list-group-item d-i news rightMost">
+                                    <span class="wh wh-top">COVID19 · LIVE</span>
+                                    <!-- <i class="fas fa-ellipsis-h wh-option"></i> -->
+                                    <br>
+                                    <span class="wh wh-hashtag bolded">COVID 19 LIVE</span>
+                                    <br>
+                                    <span class="wh wh-tweet">Get COVID19 status LIVE</span>
+
+                                    <img class="wh-img" src="images/Mask.jpg" alt="" srcset="">
+                                </li>
+                                <li class="list-group-item d-i news rightMost">
+                                    <span class="wh wh-top">JAMIA · Trending</span>
+                                    <!-- <i class="fas fa-ellipsis-h wh-option"></i> -->
+                                    <br>
+                                    <span class="wh wh-hashtag bolded">First Sem Viva Cancelled Yayaya pawri krlo</span>
+                                    <br>
+                                    <img class="wh-img" src="images/JMIlogo.png" alt="" srcset="">
+                                </li>
+                                <li class="wh-end list-group-item d-i rightMost">
+                                    <a class="p-2 text-decoration-none" href="" style="color: #1DA1F2"> Show More</a>
+
+                                </li>
+                            </ul>
+
+                        </div>
+                    </li>
+                    <li class="nav pt-3">
+                        <div>
+                            <div class="news-header news wh-top  rightMost">
+                                <h2 class="news-header-text ps-3 h2">Topics To Follow</h2>
+                            </div>
+                            <ul class="list-group list-group-flush ">
+                                <li class="list-group-item d-i news rightMost">
+                                    <span class="wh wh-hashtag bolded">$ETH</span>
+                                    <br>
+                                    <span class="wh wh-tweet">Currency</span>
+                                    <i class="fas fa-times ttp-cross fa-2x"></i>
+                                    <button class="btn btn-primary ttp-button changeFollow "
+                                        onclick="toggleButtonText(this)"> <span class="button-text">Follow</span>
+                                    </button>
+                                </li>
+                                <li class=" list-group-item d-i news rightMost">
+                                    <span class="wh wh-hashtag bolded">Funny Tweets</span>
+                                    <br>
+                                    <span class="wh wh-tweet">Tweets making people laugh</span>
+                                    <i class="fas fa-times ttp-cross fa-2x"></i>
+                                    <button class="btn btn-primary ttp-button changeFollow"
+                                        onclick="toggleButtonText(this)"> <span class="button-text">Follow</span>
+                                    </button>
+                                </li>
+                                <li class=" list-group-item d-i news rightMost">
+                                    <span class="wh wh-hashtag bolded">Indian Premier League</span>
+                                    <br>
+                                    <span class="wh wh-tweet">Cricket League</span>
+                                    <i class="fas fa-times ttp-cross fa-2x"></i>
+                                    <button class="btn btn-primary ttp-button changeFollow"
+                                        onclick="toggleButtonText(this)"> <span class="button-text">Follow</span>
+                                    </button>
+                                </li>
+                                <li class=" wh-end list-group-item d-i rightMost">
+                                    <a class="p-2 text-decoration-none" href="" style="color: #1DA1F2"> Show
+                                        More</a>
+
+                                </li>
+
+                            </ul>
+                            <span>
+                                <div class="p-3 rb-des">
+                                    <a class="pe-3 rb-des-a rp-des-a-hover" href="">Terms of Service</a>
+                                    <a class="pe-3 rb-des-a rp-des-a-hover" href="">Privacy Policy</a>
+                                    <a class="pe-3 rb-des-a rp-des-a-hover" href="">Cookie Policy</a>
+                                    <a class="pe-3 rb-des-a rp-des-a-hover" href="">Ads info More</a>
+                                    <span class="pe-3 rb-des-a">© 2023 Twitter, Inc.</span>
+                                </div>
+                            </span>
+
+                        </div>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous">
+        </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <script src="index.js"></script>
+</body>
+
+</html>

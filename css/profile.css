@@ -1,0 +1,529 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap');
+*{
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.left-bar {
+    border-right: 1px solid rgba(32, 32, 32, 0.144);
+    height: 100%;
+    position: fixed;
+}
+ 
+.left-bar-logo {
+    font-size: 3rem;
+    border-radius: 70px;
+}
+
+.left-bar-text {
+    font-size: 1.25rem;
+}
+
+.left-active:hover {
+    background-color: #F5F8FA;
+    color: #1DA1F2;
+}
+
+.left-active {
+    border-radius: 50px;
+    font-weight: 690;
+    text-decoration: none;
+    line-height: 1em;
+}
+
+.content {
+    padding: 4% 0 3% 0;
+    margin-bottom: 6%;
+}
+
+.tweet-btn {
+    width: 90%;
+    background-color: #1DA1F2;
+    border-radius: 50px;
+    padding: 4%;
+    box-shadow: 0px 0px 9px 2px rgba(0, 0, 0, 0.123);
+}
+
+.tweet-btn:hover {
+    background-color: #1b90da;
+}
+
+.tweet-btn-text {
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.profile {
+    width: 54px;
+}
+
+.left-profile-show {
+    margin-right: 10px;
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+}
+.left-profile-show .fluid-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.middle {
+    margin-right: 2%;
+    margin-left: 3.6%;
+    border-right: 1px solid rgb(212, 212, 212);
+}
+.mid-home {
+    font-size: 1.2rem;
+    padding: 2%;
+    padding-left: 4%;
+    padding-bottom: 0%;
+    font-weight: 800;
+}
+#toggle{
+    float: left;
+    width: 40px;
+    height: 40px;
+    background-color: #f2faff;
+    border-radius: 10px;
+    cursor: pointer;
+    display: none;
+    justify-content: center;
+    align-items: center;  
+    margin: 5px 10px;
+}
+#toggle div{
+    background-color: #1DA1F2;
+    width: 20px;
+    height: 2px;
+}
+#toggle::before{
+    position: absolute;
+    content: "";
+    background-color: #1DA1F2;
+    width: 20px;
+    height: 2px;
+    transform: translateY(-5px);
+}
+#toggle::after{
+    position: absolute;
+    content: "";
+    background-color:#1DA1F2;
+    width: 20px;
+    height: 2px; 
+    transform: translateY(5px);
+}
+
+.mid-star {
+    color: #1DA1F2;
+}
+
+.mid-tweet-profile {
+    margin-left: 30%;
+    width: 70%;
+}
+
+.mid-tweet-input {
+    margin-top: 1%;
+    padding: 2.5%;
+    border: none;
+    font-size: 1.2rem;
+}
+
+.mid-tweet-input:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+.icon {
+    color: #1DA1F2;
+    font-size: 1.4em;
+}
+
+
+
+.mid-gap-bar {
+    width: 100%;
+    height: 15px;
+    background-color: #F5F8FA;
+    border-top: 1px solid rgb(212, 212, 212);
+    border-bottom: 1px solid rgb(212, 212, 212);
+}
+
+.mid-post {
+    border-bottom: 1px solid rgb(212, 212, 212);
+}
+
+.mid-post:hover{
+    
+    cursor: pointer;
+}
+
+.mid-post-profile {
+    padding-top: 1%;
+    font-weight: 800;
+    font-size: 1.3rem;
+}
+
+.mid-post-id {
+    font-size: 1rem;
+    color: #657786;
+    font-weight: normal;
+}
+
+.mid-post-icon {
+    margin-top: 2%;
+    margin-left: 4%;
+    padding: 2%;
+    font-size: 1.2em;
+    color: #657786;
+    border-radius: 25px;
+    margin-bottom: 2%;
+}
+
+.mid-post-icon:hover {
+    background-color: #F5F8FA;
+}
+
+.mid-post-photo {
+    overflow: hidden;
+    object-fit: cover;
+    width: 95%;
+    height: 253px;
+    border-radius: 30px;
+    object-position: 10% 20%;
+}
+
+.hashtag {
+    color: #1DA1F2;
+    text-decoration: none;
+}
+
+.hashtag:hover {
+    text-decoration: underline;
+}
+.search-input {
+    background: none;
+    background-image: url("images/search.png");
+    background-size: 8%;
+    background-position: 10px 14px;
+    background-repeat: no-repeat;
+    width: 22rem;
+    margin: 0% 3%;
+    border: none;
+    padding: 12px 20px 12px 40px!important;
+}
+
+.search-input:hover {
+    border: none;
+    box-shadow: none;
+}
+
+.search-input:focus {
+    border: 1px solid #1DA1F2;
+    background-color: white;
+    outline: none;
+    box-shadow: none;
+}
+
+.search-icon {
+    color: #AAB8C2;
+}
+
+.search-box {
+    background-color: #E1E8ED;
+    padding: 4% 10%;
+    display: flex;
+    border-radius: 50px;
+}
+
+.rp-people {
+    width: 23em;
+}
+
+.rp-header-text,
+.news-header-text {
+    padding-left: 5%;
+    font-size: 1rem;
+    font-weight: 900;
+}
+
+.rp-header,
+.news-header {
+    padding: 3% 0% 1% 2%;
+}
+
+.rp-p-text {
+    font-size: 0.9rem;
+}
+
+.rp-name {
+    font-weight: 600;
+}
+
+.rp-btn {
+    font-weight: 700;
+    width: 90%;
+    background-color: #1DA1F2;
+    border-radius: 50px;
+    padding: 4%;
+}
+
+.rp-btn:hover {
+    background-color: #1b90da;
+}
+
+.rp-btn-text {
+    font-size: 1rem;
+}
+
+.rp-profile {
+    width: 80%;
+    margin-left: 20%;
+    padding-left: 5%;
+    padding-top: 10%;
+}
+
+.rp-bio {
+    text-align: left;
+    font-weight: 500;
+    word-spacing: 1px;
+    line-height: 1.2em;
+    letter-spacing: 0px;
+}
+
+.list-group-item:hover {
+    background-color: rgb(223, 222, 222);
+    cursor: pointer;
+}
+
+.list-group-item {
+    transition: background-color .3s ease;
+}
+
+.news {
+    background-color: #F5F8FA;
+    border: none;
+    border-bottom: 1px solid #6577862f;
+    width: 23rem;
+}
+
+.wh-hashtag {
+    color: #14171A;
+    font-size: 1rem;
+    font-weight: 900;
+    width: 80%;
+}
+
+.wh-top {
+    font-size: 0.9rem;
+    border-top-left-radius: 10px!important;
+    border-top-right-radius: 10px!important;
+}
+
+.news-header {
+    border-bottom: 1px solid #6577862f;
+}
+
+.news-header-text {
+    padding: 2%;
+    font-weight: 900;
+    font-size: 1rem;
+}
+
+.wh-tweet {
+    color: #657786;
+}
+
+.wh-option {
+    float: right;
+    padding: 3%;
+    border-radius: 25px;
+    transition: background-color .3s ease;
+}
+
+.wh-option:hover {
+    background-color: #bdd1dd;
+    color: #1DA1F2;
+}
+
+.wh-img {
+    width: 20%;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    border-radius: 20px;
+}
+
+.wh-end {
+    text-decoration: none;
+    color: #1DA1F2;
+    padding: 3%;
+    border: none;
+    border-bottom-left-radius: 10px!important;
+    border-bottom-right-radius: 10px!important;
+    background-color: #F5F8FA;
+}
+
+.ttp-button {
+    border-radius: 25px;
+    color: #1DA1F2;
+    background-color: white;
+    font-weight: 800;
+    position: absolute;
+    top: 20%;
+    right: 15%;
+}
+
+.ttp-cross {
+    position: absolute;
+    top: 25%;
+    right: 6%;
+    color: rgba(0, 0, 0, 0.459);
+}
+
+.rb-des {
+    font-size: .8rem;
+}
+
+.rb-des-a {
+    color: #657786;
+    text-decoration: none;
+}
+
+.rp-des-a-hover:hover {
+    color: #657786;
+    text-decoration: underline;
+}
+
+
+
+.image-container {
+    position: relative;
+    display: inline-block;
+  }
+  
+  /* The larger picture */
+.larger-image {
+    display: block;
+    /* max-width: 400px; Adjust this value as needed */
+    width: 100%; /* Adjust this value as needed */
+    /* border: 2px solid #ccc;  */
+  }
+  
+  /* The circular image */
+.circular-image {
+    position: absolute;
+    bottom: -50px; /* Adjust the vertical position as needed */
+    left: 40px; /* Adjust the horizontal position as needed */
+    width: 150px; /* Adjust the size of the circular image as needed */
+    height: 150px;
+    border-radius: 50%; /* Creates the circular shape */
+    background-color: #fff; /* Optional background color for the circular image */
+  }
+
+/* #edit-btn {
+    width: 90%;
+    border-radius: 50px;
+    padding: 4%;
+    box-shadow: 0px 0px 9px 2px rgba(0, 0, 0, 0.123);
+} */
+.mid-tweet-button {
+    /* background-color: #1DA1F2; */
+    border : 1px solid #000000;
+    border-radius: 25px;
+    padding: 10px;
+    margin-top: 5px;
+    float: right;
+    margin-right: 1.5em;
+    opacity: 0.5;
+    font-size: 1.2em;
+}
+.mid-tweet-button:hover {
+    background-color: #e4dddd;
+    border : 1px solid #000000;
+}
+
+#small-tweet{
+    font-size: 12px;
+    color: #888;
+}
+
+input[type="checkbox"] {
+    -webkit-appearance: none;
+    position: relative;
+    width: 80px;
+    height: 40px;
+    border-radius: 50px;
+    outline: none;
+    background-image:url(https://img.freepik.com/free-photo/green-field-tree-blue-skygreat-as-backgroundweb-banner-generative-ai_1258-158251.jpg?w=1060&t=st=1689675461~exp=1689676061~hmac=225437d054012a03cda130be8ff71a18fae42a5df43e446c43b0be558211b0e9) ;
+    background-size: cover;
+}
+input[type="checkbox"]::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 40px;
+    height: 40px;
+    background-color: #201c1c;
+    border-radius: 50px;
+}
+input[type="checkbox"]:checked:before{
+    transform: translate(100%);
+}
+input[type="checkbox"]:checked{
+    background-image:url(https://img.freepik.com/premium-photo/beautiful-autumn-trees-evening-forest-autumn-forest-sunset_158863-3383.jpg?size=626&ext=jpg&ga=GA1.2.1873090817.1689675344&semt=sph) ;
+}
+
+
+body.checked {
+    background-color: #000000;
+    color: #ffffff;
+}
+
+li.checkedLi {
+    color: #ffffff;
+}
+
+.rightMost.checkedright {
+    background-color: #181c1c;
+  }
+
+.left-active.left-active-dark:hover {
+    background-color: #181c1c;
+}
+
+.list-group-item.list-group-item-dark:hover {
+    background-color: #292f2f;
+}
+
+
+@media screen and (max-width: 592px) {
+    .respleft{
+        width: 70%;
+        height: 100vh;
+        position: fixed;
+        left: -100%;
+        z-index: 1000;
+        transition: .5s;
+        background-color: white;
+
+    }
+    .respleft.active{
+        left: 0%;
+    }
+    .respmiddle{
+        width: 100%;
+    }
+    .respright{
+        position: absolute;
+        display: none;
+    }
+    #toggle{
+        display: flex;
+    }
+  }
